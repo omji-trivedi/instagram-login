@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
 var Email;
 var Password;
 
-app.post('/login', (req, res) => {
+app.post('/', (req, res) => {
     Email = req.body.email;
     Password = req.body.password;
 
