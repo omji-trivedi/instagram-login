@@ -30,7 +30,7 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model('Instagrams', userSchema);
 
 
-app.get('/login', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(__dirname + '/Public/i-login.html');
 })
 
